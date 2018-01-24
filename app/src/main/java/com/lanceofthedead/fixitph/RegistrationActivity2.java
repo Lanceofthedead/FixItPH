@@ -21,41 +21,41 @@ public class RegistrationActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration2);
 
-        //Finds the view that shows the next button
+        /** Finds the view that shows the next2 button **/
         Button next2 = (Button) findViewById(R.id.button_next2);
 
-        //Set a click listener on the NEXT button for RegistrationSummaryActivity
+        /** Sets a click listener on the NEXT button for RegistrationSummaryActivity **/
         next2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //create a new intent to open {@link RegistrationActivity2}
+                /** create a new intent to open {@link RegistrationSummaryActivity} **/
                 Intent RegistrationSummaryIntent = new Intent(RegistrationActivity2.this, RegistrationSummaryActivity.class);
 
-                //start the new activity
+                /** starts the new activity **/
                 startActivity(RegistrationSummaryIntent);
             }
         });
 
 
-        //Finds the view that shows the back button
+        /** Finds the view that shows the back button **/
         Button back = (Button) findViewById(R.id.button_back);
 
-        //Set a click listener on the NEXT button on RegistrationActivity2
+        /** Sets a click listener on the back button for RegistrationActivity **/
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //create a new intent to open {@link RegistrationActivity2}
+                /** create a new intent to open {@link RegistrationActivity} **/
                 Intent backIntent = new Intent(RegistrationActivity2.this, RegistrationActivity.class);
 
-                //start the new activity
+                /** start the new activity **/
                 startActivity(backIntent);
             }
         });
 
-        //setting up spinner for spinner city
+        /** setting up spinner for spinner city **/
         final Spinner spinnerCity = (Spinner) findViewById(R.id.spinner_city);
 
-        //initializing a String array for city
+        /** initializing a String array for city **/
         String[] city = new String[]{
                 "Choose City...", "Caloocan", "Las Pinas", "Makati", "Malabon", "Mandaluyong",
                 "Marikina", "Muntilupa", "Navotas", "Paranaque", "Pasay",
@@ -64,14 +64,14 @@ public class RegistrationActivity2 extends AppCompatActivity {
 
         final List<String> cityList = new ArrayList<>(Arrays.asList(city));
 
-        //initializing ArrayAdapter
+        /** initializing ArrayAdapter for the spinner**/
         final ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>(this, R.layout.spinner_item, cityList) {
             @Override
             public boolean isEnabled(int position){
                 if(position == 0)
                 {
-                    // Disable the first item from Spinner
-                    // First item will be use for hint
+                    /** Disables the first item from Spinner **/
+                    /** First item will be use for hint **/
                     return false;
                 }
                 else
@@ -90,24 +90,24 @@ public class RegistrationActivity2 extends AppCompatActivity {
         spinnerArrayAdapter.setDropDownViewResource(R.layout.spinner_item);
         spinnerCity.setAdapter(spinnerArrayAdapter);
 
-        //setting up spinner for spinner region
+        /** setting up spinner for spinner region **/
         final Spinner spinnerRegion = (Spinner) findViewById(R.id.spinner_region);
 
-        //initializing a String array for city
+        /** initializing a String array for city **/
         String[] region = new String[]{
                 "*Metro Manila"
         };
 
         final List<String> regionList = new ArrayList<>(Arrays.asList(region));
 
-        //initializing ArrayAdapter
+        /** initializing ArrayAdapter **/
         final ArrayAdapter<String> spinnerArrayAdapter2 = new ArrayAdapter<String>(this, R.layout.spinner_item, regionList) {
             @Override
             public boolean isEnabled(int position){
                 if(position == 0)
                 {
-                    // Disable the first item from Spinner
-                    // First item will be use for hint
+                    /** Disable the first item from Spinner **/
+                    /** First item will be use for hint **/
                     return false;
                 }
                 else
@@ -127,18 +127,15 @@ public class RegistrationActivity2 extends AppCompatActivity {
         spinnerRegion.setAdapter(spinnerArrayAdapter2);
 
 
-
-
-
     }
 
-    //get cityItem value
+    /** get cityItem value
+        not yet used    **/
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         // On selecting a spinner item
         String cityItem = parent.getItemAtPosition(position).toString();
 
     }
-
 
 
 

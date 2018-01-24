@@ -16,7 +16,7 @@ import java.util.Calendar;
 
 public class RegistrationActivity extends AppCompatActivity {
 
-    //initialization for DatePicker
+    /** initialization for DatePicker **/
     private static final String TAG = "RegistrationActivity";
     private TextView mDisplayDate;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
@@ -27,7 +27,7 @@ public class RegistrationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
 
-        //setting up DatePicker
+        /** setting up DatePicker **/
         mDisplayDate = (TextView) findViewById(R.id.text_view_select_date);
         mDisplayDate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,18 +57,18 @@ public class RegistrationActivity extends AppCompatActivity {
             }
         };
 
-        //Finds the view that shows the Button for registration
+        /** Finds the view that shows the Button for registration **/
         Button next = (Button) findViewById(R.id.button_next);
 
 
-        //Set a click listener on the CONTINUE REGISTER button
+        /** Set a click listener on the CONTINUE REGISTER button **/
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //create a new intent to open {@link RegistrationActivity}
+                /** create a new intent to open {@link RegistrationActivity2} **/
                 Intent registration2Intent = new Intent(RegistrationActivity.this, RegistrationActivity2.class);
 
-                //start the new activity
+                /** start the new activity **/
                 startActivity(registration2Intent);
             }
         });

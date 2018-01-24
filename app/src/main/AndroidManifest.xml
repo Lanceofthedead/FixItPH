@@ -16,11 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".RegistrationActivity" />
-        <activity android:name=".RegistrationSummaryActivity" />
         <activity android:name=".RegistrationActivity2" />
+        <activity android:name=".RegistrationSummaryActivity" />
+        <activity android:name=".RegistrationPopUpActivity"
+            android:theme="@style/AppTheme.CustomThemeForPopUp">
+        </activity>
+        <activity android:name=".LogInActivity" />
+
     </application>
 
 </manifest>
