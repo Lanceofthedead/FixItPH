@@ -20,11 +20,21 @@
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".RegistrationActivity2" />
         <activity android:name=".RegistrationSummaryActivity" />
-        <activity android:name=".RegistrationPopUpActivity"
-            android:theme="@style/AppTheme.CustomThemeForPopUp">
-        </activity>
+        <activity
+            android:name=".RegistrationPopUpActivity"
+            android:theme="@style/AppTheme.CustomThemeForPopUp" />
         <activity android:name=".LogInActivity" />
-
+        <activity android:name=".MainPageActivity" />
+        <activity android:name=".RequestLocationActivity" />
+        <activity android:name=".ArrivalTimeWindowActivity" />
+        <activity android:name=".RequestSummaryActivity" />
+        <activity android:name=".TicketProcessingActivity" />
+        <activity android:name=".RequestTicketSentActivity" />
+        <activity android:name=".WorkerConfirmationActivity" />
+        <activity android:name=".ViewWorkerProfilePopUpActivity" />
+        <activity android:name=".AcceptWorkerConfirmedPopUpActivity" />
+        <activity android:name=".CancelBookingPopUpActivity" />
+        <activity android:name=".BookingCancellationConfirmedPopUpActivity"></activity>
     </application>
 
 </manifest>

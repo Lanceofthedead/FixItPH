@@ -3,4 +3,5 @@
     <string name="tv_go_here"><u><b>Go Here</b></u></string>
     <string name="tv_continue_to_login"><u>Continue to Login</u></string>
     <string name="tv_forgot_password"><u>Forgot password?</u></string>
+    <string name="tv_view_profile"><u>View profile</u></string>
 </resources>

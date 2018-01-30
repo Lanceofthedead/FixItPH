@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Current Bookings" />
+    <item android:title="History" />
+    <item android:title="Settings" />
+    <item android:title="Help" />
+    <item android:title="Logout" />
+    <item android:title="" />
+        <shape
+            android:shape="rectangle">
+            <stroke android:width="1dp"  />
+            <solid android:color="@android:color/white" />
+        </shape>
+    <item android:title="" />
+    <shape
+        android:shape="rectangle">
+        <stroke android:width="1dp"  />
+        <solid android:color="@android:color/white" />
+    </shape>
+    <item android:title="" />
+    <shape
+        android:shape="rectangle">
+        <stroke android:width="1dp"  />
+        <solid android:color="@android:color/white" />
+    </shape>
+    <item android:title="Work with FixIt PH" />
+    <item android:title="Legal" />
+
+
+</menu>
